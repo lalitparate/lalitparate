@@ -1,0 +1,8 @@
+# BEGINNING OF SDM Portal Cluster CRON JOBs (do not alter this section, including this line)
+
+# These crons will be enabled only on staging server
+#0 */1 * * * python2.6 /home/sdmagg/sdm/media/sdap_standalone_portal_health_check.py >> /home/sdmagg/sdm/media/sdap_standalone_portal_health_check.log 2>&1
+
+#00 1 * * * python2.6 /home/sdmagg/sdm/media/backup_restore/backup_restore.py -b true -c /home/sdmagg/sdm/media/backup_restore/config.txt >> /home/sdmagg/sdm/media/backup_restore/backup_restore.log 2>&1
+
+# ENDING OF SDM Portal Cluster CRON JOBs (do not alter this section, including this line)
